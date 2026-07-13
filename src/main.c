@@ -25,19 +25,21 @@ void start(){
 	printf("(+,/,-,x) : ");
 	scanf(" %c",&operation);
 	if(operation == '+'){
-		printf("%d\n",add(num_a,num_b));
+		printf("Ans : %d\n",add(num_a,num_b));
 	}else if(operation == '-'){
-		printf("%d\n",sub(num_a,num_b));
+		printf("Ans : %d\n",sub(num_a,num_b));
 	}else if(operation == 'x'){
-		printf("%d\n",mul(num_a,num_b));
+		printf("Ans : %d\n",mul(num_a,num_b));
 	}else if(operation == '/'){
-		printf("%d\n",div(num_a,num_b));
+		printf("Ans : %d\n",div(num_a,num_b));
 	}else{
 		printf("Wrong Inpute!\n");
 	}
 
 }
 int main(){
-	start();
+        while(1){
+	    start();
+	}
 	return 0;
 }
